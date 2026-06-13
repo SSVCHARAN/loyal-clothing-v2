@@ -1,0 +1,282 @@
+/* ============================================================
+   LOYAL CLOTHING — Product Detail Page Styles
+   ============================================================ */
+
+.product-detail {
+  padding-top: calc(72px + var(--space-2xl));
+  padding-bottom: var(--space-4xl);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ── Breadcrumb ──────────────────────────────────────────── */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  font-size: var(--fs-caption);
+  color: var(--color-text-muted);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+}
+
+.breadcrumb__separator {
+  opacity: 0.4;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-text);
+}
+
+/* ── Product Layout ──────────────────────────────────────── */
+.product-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* ── Gallery ─────────────────────────────────────────────── */
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.product-gallery__main {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background-color: var(--color-border);
+  cursor: zoom-in;
+}
+
+.product-gallery__main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center center;
+  transition: transform var(--duration-slow) var(--ease-out-expo);
+}
+
+@media (hover: hover) {
+  .product-gallery__main:hover img {
+    transform: scale(1.6);
+    transform-origin: var(--mouse-x, center) var(--mouse-y, center);
+    transition: transform 150ms var(--ease-out-quart);
+  }
+}
+
+.product-gallery__thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+}
+
+.product-gallery__thumb {
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color var(--duration-fast);
+  background-color: var(--color-border);
+}
+
+.product-gallery__thumb:hover,
+.product-gallery__thumb.is-active {
+  border-color: var(--color-text);
+}
+
+.product-gallery__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Product Info (Sticky Sidebar) ───────────────────────── */
+.product-info {
+  position: sticky;
+  top: calc(72px + var(--space-xl));
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.product-info__label {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.product-info__name {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-snug);
+}
+
+.product-info__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.product-info__description {
+  color: var(--color-text-muted);
+  line-height: var(--lh-normal);
+}
+
+.product-info__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.product-info__section-title {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+}
+
+/* ── Add to Cart Area ────────────────────────────────────── */
+.product-info__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+}
+
+/* ── Accordion Details ───────────────────────────────────── */
+.product-accordion {
+  border-top: 1px solid var(--color-border);
+}
+
+.product-accordion__item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.product-accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-md);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.product-accordion__trigger svg {
+  width: 16px;
+  height: 16px;
+  transition: transform var(--duration-base) var(--ease-out-quart);
+}
+
+.product-accordion__trigger.is-open svg {
+  transform: rotate(180deg);
+}
+
+.product-accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--duration-base) var(--ease-out-quart);
+}
+
+.product-accordion__content-inner {
+  padding-bottom: var(--space-lg);
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  line-height: var(--lh-normal);
+}
+
+/* ── Related Products ────────────────────────────────────── */
+.related-products {
+  padding-top: var(--space-4xl);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.related-products__header {
+  margin-bottom: var(--space-2xl);
+}
+
+.related-products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+/* ── Sticky Mobile Bar ───────────────────────────────────── */
+.mobile-add-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-sticky);
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) var(--gutter);
+  box-shadow: 0 -4px 20px rgba(26, 26, 26, 0.08);
+}
+
+.mobile-add-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.mobile-add-bar__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mobile-add-bar__name {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+}
+
+.mobile-add-bar__price {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-bold);
+}
+
+.mobile-add-bar .btn {
+  flex-shrink: 0;
+  width: auto;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .product-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .product-info {
+    position: static;
+  }
+
+  .mobile-add-bar {
+    display: block;
+  }
+
+  .related-products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-gallery__thumbs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

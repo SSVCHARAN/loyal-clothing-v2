@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Loyal Clothing</title>
+  <meta name="description" content="Get in touch with Loyal Clothing. We'd love to hear from you — questions, collaborations, or just to say hello.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+
+  <!-- ═══ Announcement Bar ═══ -->
+  <div class="announcement-bar">
+    Free shipping on orders above ₹2,000 — Use code LOYAL10 for 10% off
+  </div>
+
+  <!-- ═══ Header ═══ -->
+  <header class="site-header">
+    <div class="header__inner">
+      <div class="header__logo"><a href="index.html">Loyal Clothing</a></div>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="shop.html" class="header__nav-link">Shop</a>
+        <a href="about.html" class="header__nav-link">Our Story</a>
+        <a href="contact.html" class="header__nav-link is-active">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <button class="header__action-btn" aria-label="Search" id="search-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="header__action-btn" aria-label="Open cart" id="cart-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="header__cart-count">0</span>
+        </button>
+        <button class="header__menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ Mobile Menu ═══ -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="shop.html" class="mobile-menu__link">Shop</a>
+    <a href="about.html" class="mobile-menu__link">Our Story</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ═══ Contact Section ═══ -->
+  <section class="contact">
+    <div class="contact__header">
+      <span class="caption reveal">Get in touch</span>
+      <h1 class="reveal">Let's Talk</h1>
+      <p class="contact__subtitle reveal">Questions, collaborations, or just want to say hello? We'd love to hear from you.</p>
+    </div>
+
+    <div class="contact__layout">
+
+      <!-- ── Form ──────────────────────────────────────────── -->
+      <form class="contact-form reveal-left" id="contact-form">
+        <div class="contact-form__row">
+          <div class="input-group">
+            <label for="contact-first-name">First Name</label>
+            <input type="text" id="contact-first-name" class="input" placeholder="John" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-last-name">Last Name</label>
+            <input type="text" id="contact-last-name" class="input" placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" class="input" placeholder="john@example.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" class="input" placeholder="What's this about?">
+        </div>
+
+        <div class="input-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" class="input" placeholder="Tell us more..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+
+      <!-- ── Info ──────────────────────────────────────────── -->
+      <div class="contact-info reveal-right">
+        <div class="contact-info__block">
+          <span class="contact-info__label">Email</span>
+          <span class="contact-info__value">
+            <a href="mailto:hello@loyalclothing.in">hello@loyalclothing.in</a>
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Phone</span>
+          <span class="contact-info__value">
+            <a href="tel:+919876543210">+91 98765 43210</a>
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Location</span>
+          <span class="contact-info__value">
+            Loyal Clothing HQ<br>
+            Mumbai, Maharashtra<br>
+            India
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Business Hours</span>
+          <span class="contact-info__value">
+            Mon – Fri: 10:00 AM – 7:00 PM<br>
+            Sat: 11:00 AM – 5:00 PM<br>
+            Sun: Closed
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Follow Us</span>
+          <div class="contact-info__socials">
+            <a href="#" class="contact-info__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="contact-info__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="contact-info__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">Loyal Clothing</span>
+        <p class="footer__tagline">Premium streetwear essentials crafted for those who stay true.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Shop</span>
+        <a href="shop.html" class="footer__link">All Products</a>
+        <a href="shop.html?cat=t-shirts" class="footer__link">T-Shirts</a>
+        <a href="shop.html?cat=hoodies" class="footer__link">Hoodies</a>
+        <a href="shop.html?cat=pants" class="footer__link">Pants</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Company</span>
+        <a href="about.html" class="footer__link">Our Story</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Help</span>
+        <a href="#" class="footer__link">Shipping & Returns</a>
+        <a href="#" class="footer__link">Size Guide</a>
+        <a href="#" class="footer__link">FAQs</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">© 2026 Loyal Clothing. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ═══ Cart Drawer ═══ -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer">
+    <div class="cart-drawer__header">
+      <span class="cart-drawer__title">Your Bag</span>
+      <button class="cart-drawer__close" aria-label="Close cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer__items"></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal</span>
+        <span class="cart-drawer__subtotal-value">₹0</span>
+      </div>
+      <a href="#" class="btn btn--primary" style="width:100%">Checkout</a>
+      <span class="cart-drawer__note">Shipping calculated at checkout</span>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

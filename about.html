@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story — Loyal Clothing</title>
+  <meta name="description" content="The story behind Loyal Clothing. Born from a belief that clothing should mean something — crafted locally with premium fabrics.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/about.css">
+</head>
+<body>
+
+  <!-- ═══ Announcement Bar ═══ -->
+  <div class="announcement-bar">
+    Free shipping on orders above ₹2,000 — Use code LOYAL10 for 10% off
+  </div>
+
+  <!-- ═══ Header ═══ -->
+  <header class="site-header">
+    <div class="header__inner">
+      <div class="header__logo"><a href="index.html">Loyal Clothing</a></div>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="shop.html" class="header__nav-link">Shop</a>
+        <a href="about.html" class="header__nav-link is-active">Our Story</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <button class="header__action-btn" aria-label="Search" id="search-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="header__action-btn" aria-label="Open cart" id="cart-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="header__cart-count">0</span>
+        </button>
+        <button class="header__menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ Mobile Menu ═══ -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="shop.html" class="mobile-menu__link">Shop</a>
+    <a href="about.html" class="mobile-menu__link">Our Story</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ═══ About Hero ═══ -->
+  <section class="about-hero">
+    <div class="about-hero__bg parallax-bg">
+      <img src="assets/images/hero-bg.png" alt="Loyal Clothing Studio" class="img-cover">
+    </div>
+    <div class="about-hero__overlay"></div>
+    <div class="about-hero__content">
+      <span class="caption reveal" style="color: rgba(249,246,240,0.7);">Est. 2024</span>
+      <h1 class="display reveal" style="color: var(--color-bg);">Our Story</h1>
+    </div>
+  </section>
+
+  <!-- ═══ Story Section ═══ -->
+  <section class="story-section">
+
+    <!-- Block 1: Origin -->
+    <div class="story-block">
+      <div class="story-block__image reveal-left">
+        <img src="assets/images/product-cargo.png" alt="Loyal Clothing craftsmanship" class="img-cover" style="min-height:480px;">
+      </div>
+      <div class="story-block__content reveal-right">
+        <span class="story-block__label">The Beginning</span>
+        <h2>Born from Loyalty</h2>
+        <p class="story-block__text">
+          Loyal Clothing started with a simple idea: create clothes that actually mean something. No fast fashion, no disposable trends — just well-made pieces that become part of your identity. We launched from a small studio with nothing but a vision and a handful of heavyweight cotton rolls.
+        </p>
+        <p class="story-block__text">
+          Every piece we design is a reflection of loyalty — to quality, to community, and to the people who wear us.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 2: Craftsmanship (reversed) -->
+    <div class="story-block story-block--reverse">
+      <div class="story-block__image reveal-right">
+        <img src="assets/images/product-hoodie.png" alt="Loyal Clothing quality materials" class="img-cover" style="min-height:480px;">
+      </div>
+      <div class="story-block__content reveal-left">
+        <span class="story-block__label">The Craft</span>
+        <h2>Made to Last</h2>
+        <p class="story-block__text">
+          We obsess over fabric weight, stitch count, and garment construction. Every hoodie uses 400 GSM French Terry cotton. Every tee starts at 240 GSM. We work with local manufacturers who share our standards — because cutting corners on quality means cutting corners on trust.
+        </p>
+        <p class="story-block__text">
+          The result? Clothes that feel substantial the moment you pick them up, and only get better with every wash.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 3: Community -->
+    <div class="story-block">
+      <div class="story-block__image reveal-left">
+        <img src="assets/images/product-tee.png" alt="Loyal Clothing community" class="img-cover" style="min-height:480px;">
+      </div>
+      <div class="story-block__content reveal-right">
+        <span class="story-block__label">The People</span>
+        <h2>Built by Community</h2>
+        <p class="story-block__text">
+          Loyal isn't just a brand — it's a community of people who value substance over hype. From the photographers who shoot our lookbooks to the friends who wear-test every prototype, our community shapes everything we do.
+        </p>
+        <p class="story-block__text">
+          When you wear Loyal, you're not just wearing clothes. You're wearing a shared belief that style should be authentic, intentional, and built to last.
+        </p>
+        <div>
+          <a href="shop.html" class="btn btn--primary">Explore the Collection</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ Values Grid ═══ -->
+  <section class="values">
+    <div class="values__header">
+      <span class="caption reveal">What we stand for</span>
+      <h2 class="reveal">Our Values</h2>
+    </div>
+
+    <div class="values__grid stagger">
+      <div class="value-card reveal">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="value-card__title">Quality First</h3>
+        <p class="value-card__text">Every piece is made with premium fabrics and meticulous construction. We never compromise on materials.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3 class="value-card__title">Locally Made</h3>
+        <p class="value-card__text">We work with local manufacturers and artisans. Every purchase supports the community that built us.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+            <path d="M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <h3 class="value-card__title">Community Driven</h3>
+        <p class="value-card__text">Our community shapes our designs. We listen, adapt, and build together — because loyalty goes both ways.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">Loyal Clothing</span>
+        <p class="footer__tagline">Premium streetwear essentials crafted for those who stay true.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Shop</span>
+        <a href="shop.html" class="footer__link">All Products</a>
+        <a href="shop.html?cat=t-shirts" class="footer__link">T-Shirts</a>
+        <a href="shop.html?cat=hoodies" class="footer__link">Hoodies</a>
+        <a href="shop.html?cat=pants" class="footer__link">Pants</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Company</span>
+        <a href="about.html" class="footer__link">Our Story</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Help</span>
+        <a href="#" class="footer__link">Shipping & Returns</a>
+        <a href="#" class="footer__link">Size Guide</a>
+        <a href="#" class="footer__link">FAQs</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">© 2026 Loyal Clothing. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ═══ Cart Drawer ═══ -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer">
+    <div class="cart-drawer__header">
+      <span class="cart-drawer__title">Your Bag</span>
+      <button class="cart-drawer__close" aria-label="Close cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer__items"></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal</span>
+        <span class="cart-drawer__subtotal-value">₹0</span>
+      </div>
+      <a href="#" class="btn btn--primary" style="width:100%">Checkout</a>
+      <span class="cart-drawer__note">Shipping calculated at checkout</span>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

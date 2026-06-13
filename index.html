@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyal Clothing — Wear Your Identity</title>
+  <meta name="description" content="Loyal Clothing — Premium streetwear essentials crafted for those who stay true. Shop oversized tees, heavyweight hoodies, and cargo pants.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+</head>
+<body>
+
+  <!-- ═══ Announcement Bar ═══ -->
+  <div class="announcement-bar">
+    Free shipping on orders above ₹2,000 — Use code LOYAL10 for 10% off
+  </div>
+
+  <!-- ═══ Header ═══ -->
+  <header class="site-header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a href="index.html">Loyal Clothing</a>
+      </div>
+
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link is-active">Home</a>
+        <a href="shop.html" class="header__nav-link">Shop</a>
+        <a href="about.html" class="header__nav-link">Our Story</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Search Button -->
+        <button class="header__action-btn" aria-label="Search" id="search-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="header__action-btn" aria-label="Open cart" id="cart-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="header__cart-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="header__menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ Mobile Menu ═══ -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="shop.html" class="mobile-menu__link">Shop</a>
+    <a href="about.html" class="mobile-menu__link">Our Story</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ═══ Hero Section ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg parallax-bg">
+      <img src="assets/images/hero-bg.png" alt="Loyal Clothing — Premium Streetwear" class="img-cover">
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <span class="hero__tagline reveal">New Collection 2026</span>
+      <h1 class="hero__title reveal">Wear Your<br>Identity</h1>
+      <p class="hero__subtitle reveal">Premium streetwear essentials crafted for those who stay true. Quality fabrics, bold silhouettes, everyday confidence.</p>
+      <div class="hero__cta reveal">
+        <a href="shop.html" class="btn btn--primary">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══ Featured Collection ═══ -->
+  <section class="featured section" id="featured">
+    <div class="featured__header">
+      <div>
+        <span class="featured__label reveal">Curated for you</span>
+        <h2 class="reveal">Featured Picks</h2>
+      </div>
+      <a href="shop.html" class="btn btn--secondary btn--small reveal">View All</a>
+    </div>
+
+    <div class="featured__grid stagger">
+      <!-- Card 1 — Large -->
+      <a href="product.html?id=2" class="product-card reveal" data-product-id="2">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie" class="img-cover product-card__image">
+          <span class="product-card__badge badge badge--sale">Sale</span>
+          <div class="product-card__quick-add">
+            <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Heavyweight Hoodie</span>
+          <div>
+            <span class="product-card__price">₹2,999</span>
+            <span class="product-card__price product-card__price--old">₹3,499</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="product.html?id=1" class="product-card reveal" data-product-id="1">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-tee.png" alt="Essential Oversized Tee" class="img-cover product-card__image">
+          <span class="product-card__badge badge badge--new">New</span>
+          <div class="product-card__quick-add">
+            <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Essential Oversized Tee</span>
+          <span class="product-card__price">₹1,499</span>
+        </div>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="product.html?id=3" class="product-card reveal" data-product-id="3">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-cargo.png" alt="Relaxed Cargo Pants" class="img-cover product-card__image">
+          <div class="product-card__quick-add">
+            <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+          </div>
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Relaxed Cargo Pants</span>
+          <span class="product-card__price">₹2,499</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ Brand Story Strip ═══ -->
+  <section class="story-strip" id="story-strip">
+    <div class="story-strip__inner">
+      <div class="story-strip__image reveal-left parallax-bg">
+        <img src="assets/images/hero-bg.png" alt="Behind the scenes at Loyal Clothing" class="img-cover" style="min-height:500px;">
+      </div>
+      <div class="story-strip__content reveal-right">
+        <span class="story-strip__label">Our Story</span>
+        <h2>Built on Loyalty,<br>Worn with Pride</h2>
+        <p class="story-strip__text">We started with a simple belief: clothing should mean something. Every piece we make is designed to last, crafted locally with premium fabrics, and built for people who value substance over hype.</p>
+        <div>
+          <a href="about.html" class="btn btn--secondary">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ New Arrivals Carousel ═══ -->
+  <section class="arrivals section" id="arrivals">
+    <div class="arrivals__header">
+      <div>
+        <span class="featured__label reveal">Just Dropped</span>
+        <h2 class="reveal">New Arrivals</h2>
+      </div>
+      <a href="shop.html" class="btn btn--secondary btn--small reveal">Shop All</a>
+    </div>
+
+    <div class="arrivals__scroll-wrapper">
+      <div class="arrivals__track stagger">
+        <!-- Arrival 1 -->
+        <a href="product.html?id=5" class="product-card reveal" data-product-id="5">
+          <div class="product-card__image-wrapper">
+            <img src="assets/images/product-joggers.png" alt="Streetwear Joggers" class="img-cover product-card__image">
+            <span class="product-card__badge badge badge--new">New</span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Streetwear Joggers</span>
+            <span class="product-card__price">₹2,199</span>
+          </div>
+        </a>
+
+        <!-- Arrival 2 -->
+        <a href="product.html?id=6" class="product-card reveal" data-product-id="6">
+          <div class="product-card__image-wrapper">
+            <img src="assets/images/product-vintage-hoodie.png" alt="Washed Vintage Hoodie" class="img-cover product-card__image">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Washed Vintage Hoodie</span>
+            <span class="product-card__price">₹3,299</span>
+          </div>
+        </a>
+
+        <!-- Arrival 3 -->
+        <a href="product.html?id=7" class="product-card reveal" data-product-id="7">
+          <div class="product-card__image-wrapper">
+            <img src="assets/images/product-polo.png" alt="Drop Shoulder Polo" class="img-cover product-card__image">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Drop Shoulder Polo</span>
+            <span class="product-card__price">₹1,799</span>
+          </div>
+        </a>
+
+        <!-- Arrival 4 -->
+        <a href="product.html?id=8" class="product-card reveal" data-product-id="8">
+          <div class="product-card__image-wrapper">
+            <img src="assets/images/product-trousers.png" alt="Wide Leg Trousers" class="img-cover product-card__image">
+            <span class="product-card__badge badge badge--sale">Sale</span>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Wide Leg Trousers</span>
+            <div>
+              <span class="product-card__price">₹2,699</span>
+              <span class="product-card__price product-card__price--old">₹2,999</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Arrival 5 (repeat for scroll) -->
+        <a href="product.html?id=4" class="product-card reveal" data-product-id="4">
+          <div class="product-card__image-wrapper">
+            <img src="assets/images/product-logo-tee.png" alt="Minimal Logo Tee" class="img-cover product-card__image">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__name">Minimal Logo Tee</span>
+            <span class="product-card__price">₹1,299</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Newsletter ═══ -->
+  <section class="newsletter section" id="newsletter">
+    <div class="newsletter__inner">
+      <span class="caption reveal">Stay in the loop</span>
+      <h2 class="reveal">Join the Loyal Club</h2>
+      <p class="newsletter__text reveal">Get early access to new drops, exclusive discounts, and behind-the-scenes content. No spam, just loyalty.</p>
+      <form class="newsletter-form reveal" id="newsletter-form">
+        <input type="email" class="input" placeholder="Enter your email" required aria-label="Email address">
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">Loyal Clothing</span>
+        <p class="footer__tagline">Premium streetwear essentials crafted for those who stay true. Quality over quantity, always.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__column">
+        <span class="footer__heading">Shop</span>
+        <a href="shop.html" class="footer__link">All Products</a>
+        <a href="shop.html?cat=t-shirts" class="footer__link">T-Shirts</a>
+        <a href="shop.html?cat=hoodies" class="footer__link">Hoodies</a>
+        <a href="shop.html?cat=pants" class="footer__link">Pants</a>
+      </div>
+
+      <div class="footer__column">
+        <span class="footer__heading">Company</span>
+        <a href="about.html" class="footer__link">Our Story</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="#" class="footer__link">Careers</a>
+        <a href="#" class="footer__link">Blog</a>
+      </div>
+
+      <div class="footer__column">
+        <span class="footer__heading">Help</span>
+        <a href="#" class="footer__link">Shipping & Returns</a>
+        <a href="#" class="footer__link">Size Guide</a>
+        <a href="#" class="footer__link">FAQs</a>
+        <a href="#" class="footer__link">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__copyright">© 2026 Loyal Clothing. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ═══ Cart Drawer ═══ -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer">
+    <div class="cart-drawer__header">
+      <span class="cart-drawer__title">Your Bag</span>
+      <button class="cart-drawer__close" aria-label="Close cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-drawer__items">
+      <!-- Cart items rendered by JS -->
+    </div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal</span>
+        <span class="cart-drawer__subtotal-value">₹0</span>
+      </div>
+      <a href="#" class="btn btn--primary" style="width:100%">Checkout</a>
+      <span class="cart-drawer__note">Shipping calculated at checkout</span>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* ============================================================
+   LOYAL CLOTHING — Shop Page Styles
+   ============================================================ */
+
+/* ── Shop Header ─────────────────────────────────────────── */
+.shop-header {
+  padding-top: calc(72px + var(--space-3xl));
+  padding-bottom: var(--space-2xl);
+  text-align: center;
+}
+
+.shop-header__title {
+  margin-bottom: var(--space-lg);
+}
+
+/* ── Filter Bar ──────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  margin-bottom: var(--space-2xl);
+}
+
+.filter-pill {
+  padding: 8px 20px;
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  border: 1.5px solid var(--color-border);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast),
+    color var(--duration-fast),
+    border-color var(--duration-fast);
+}
+
+.filter-pill:hover {
+  border-color: var(--color-text);
+}
+
+.filter-pill.is-active {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+/* ── Product Grid ────────────────────────────────────────── */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-sm);
+  }
+}
+
+/* ── Editorial Break ─────────────────────────────────────── */
+.editorial-break {
+  grid-column: 1 / -1;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin-block: var(--space-lg);
+}
+
+.editorial-break img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editorial-break__overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--color-overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editorial-break__text {
+  color: var(--color-bg);
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-tight);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .editorial-break {
+    height: 260px;
+  }
+}
+
+/* ── Results Count ───────────────────────────────────────── */
+.results-count {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  margin-bottom: var(--space-lg);
+  font-size: var(--fs-caption);
+  color: var(--color-text-muted);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+}

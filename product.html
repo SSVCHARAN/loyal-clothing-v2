@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heavyweight Hoodie — Loyal Clothing</title>
+  <meta name="description" content="Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Loyal branding.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/pages/product.css">
+</head>
+<body>
+
+  <!-- ═══ Announcement Bar ═══ -->
+  <div class="announcement-bar">
+    Free shipping on orders above ₹2,000 — Use code LOYAL10 for 10% off
+  </div>
+
+  <!-- ═══ Header ═══ -->
+  <header class="site-header">
+    <div class="header__inner">
+      <div class="header__logo"><a href="index.html">Loyal Clothing</a></div>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="shop.html" class="header__nav-link">Shop</a>
+        <a href="about.html" class="header__nav-link">Our Story</a>
+        <a href="contact.html" class="header__nav-link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <button class="header__action-btn" aria-label="Search" id="search-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="header__action-btn" aria-label="Open cart" id="cart-toggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="header__cart-count">0</span>
+        </button>
+        <button class="header__menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ Mobile Menu ═══ -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="shop.html" class="mobile-menu__link">Shop</a>
+    <a href="about.html" class="mobile-menu__link">Our Story</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+  </div>
+
+  <!-- ═══ Product Detail ═══ -->
+  <main class="product-detail">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb__separator">/</span>
+      <a href="shop.html">Shop</a>
+      <span class="breadcrumb__separator">/</span>
+      <span>Heavyweight Hoodie</span>
+    </nav>
+
+    <div class="product-layout">
+
+      <!-- ── Gallery ──────────────────────────────────────── -->
+      <div class="product-gallery reveal-left">
+        <div class="product-gallery__main">
+          <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie" class="img-cover">
+        </div>
+        <div class="product-gallery__thumbs">
+          <div class="product-gallery__thumb is-active">
+            <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie view 1" class="img-cover">
+          </div>
+          <div class="product-gallery__thumb">
+            <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie view 2" class="img-cover" style="filter: brightness(1.15);">
+          </div>
+          <div class="product-gallery__thumb">
+            <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie view 3" class="img-cover" style="filter: contrast(1.1);">
+          </div>
+          <div class="product-gallery__thumb">
+            <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie view 4" class="img-cover" style="filter: saturate(0.9);">
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Product Info (Sticky) ────────────────────────── -->
+      <div class="product-info reveal-right">
+
+        <span class="product-info__label">Hoodies</span>
+        <h1 class="product-info__name">Heavyweight Hoodie</h1>
+
+        <div class="product-info__price-row">
+          <span class="price">₹2,999</span>
+          <span class="price product-card__price--old" style="font-size:16px;">₹3,499</span>
+          <span class="badge badge--sale" style="margin-left: 8px;">Sale</span>
+        </div>
+
+        <p class="product-info__description">
+          Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Loyal branding at the chest.
+        </p>
+
+        <hr class="divider">
+
+        <!-- Color -->
+        <div class="product-info__section">
+          <span class="product-info__section-title">Color — <span id="selected-color">Black</span></span>
+          <div class="color-swatches">
+            <button class="color-swatch is-active" style="background-color: #1A1A1A;" aria-label="Black" data-color="Black"></button>
+            <button class="color-swatch" style="background-color: #F5F0E8;" aria-label="Cream" data-color="Cream"></button>
+          </div>
+        </div>
+
+        <!-- Size -->
+        <div class="product-info__section">
+          <span class="product-info__section-title">Size</span>
+          <div class="size-selector">
+            <button class="size-selector__option" data-size="S">S</button>
+            <button class="size-selector__option is-active" data-size="M">M</button>
+            <button class="size-selector__option" data-size="L">L</button>
+            <button class="size-selector__option" data-size="XL">XL</button>
+          </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Add to Cart -->
+        <div class="product-info__actions">
+          <button class="btn btn--primary" id="add-to-cart-btn" style="width:100%;">Add to Bag — ₹2,999</button>
+          <button class="btn btn--secondary" style="width:100%;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-right:8px;"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            Add to Wishlist
+          </button>
+        </div>
+
+        <!-- Accordion Details -->
+        <div class="product-accordion">
+          <div class="product-accordion__item">
+            <button class="product-accordion__trigger" aria-expanded="false">
+              <span>Fabric & Material</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="product-accordion__content">
+              <div class="product-accordion__content-inner">
+                100% French Terry Cotton — 400 GSM. Pre-shrunk, garment-washed for a soft hand feel right out of the bag.
+              </div>
+            </div>
+          </div>
+
+          <div class="product-accordion__item">
+            <button class="product-accordion__trigger" aria-expanded="false">
+              <span>Fit & Sizing</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="product-accordion__content">
+              <div class="product-accordion__content-inner">
+                Regular fit — Model is 5'11" wearing size L. We recommend sizing up for an oversized look.
+              </div>
+            </div>
+          </div>
+
+          <div class="product-accordion__item">
+            <button class="product-accordion__trigger" aria-expanded="false">
+              <span>Care Instructions</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="product-accordion__content">
+              <div class="product-accordion__content-inner">
+                Machine wash cold inside out. Hang dry recommended. Do not bleach. Iron on low if needed.
+              </div>
+            </div>
+          </div>
+
+          <div class="product-accordion__item">
+            <button class="product-accordion__trigger" aria-expanded="false">
+              <span>Shipping & Returns</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="product-accordion__content">
+              <div class="product-accordion__content-inner">
+                Free shipping on orders above ₹2,000. Standard delivery in 5-7 business days. Easy returns within 15 days of delivery — no questions asked.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══ Related Products ═══ -->
+  <section class="related-products section">
+    <div class="related-products__header">
+      <span class="caption reveal">Complete the look</span>
+      <h2 class="reveal">You May Also Like</h2>
+    </div>
+    <div class="related-products__grid stagger">
+      <a href="product.html?id=1" class="product-card reveal" data-product-id="1">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-tee.png" alt="Essential Oversized Tee" class="img-cover product-card__image">
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Essential Oversized Tee</span>
+          <span class="product-card__price">₹1,499</span>
+        </div>
+      </a>
+      <a href="product.html?id=3" class="product-card reveal" data-product-id="3">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-cargo.png" alt="Relaxed Cargo Pants" class="img-cover product-card__image">
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Relaxed Cargo Pants</span>
+          <span class="product-card__price">₹2,499</span>
+        </div>
+      </a>
+      <a href="product.html?id=5" class="product-card reveal" data-product-id="5">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-joggers.png" alt="Streetwear Joggers" class="img-cover product-card__image">
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Streetwear Joggers</span>
+          <span class="product-card__price">₹2,199</span>
+        </div>
+      </a>
+      <a href="product.html?id=6" class="product-card reveal" data-product-id="6">
+        <div class="product-card__image-wrapper">
+          <img src="assets/images/product-vintage-hoodie.png" alt="Washed Vintage Hoodie" class="img-cover product-card__image">
+        </div>
+        <div class="product-card__info">
+          <span class="product-card__name">Washed Vintage Hoodie</span>
+          <span class="product-card__price">₹3,299</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ Sticky Mobile Bar ═══ -->
+  <div class="mobile-add-bar">
+    <div class="mobile-add-bar__inner">
+      <div class="mobile-add-bar__info">
+        <span class="mobile-add-bar__name">Heavyweight Hoodie</span>
+        <span class="mobile-add-bar__price">₹2,999</span>
+      </div>
+      <button class="btn btn--primary">Add to Bag</button>
+    </div>
+  </div>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="site-footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="footer__logo">Loyal Clothing</span>
+        <p class="footer__tagline">Premium streetwear essentials crafted for those who stay true.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Shop</span>
+        <a href="shop.html" class="footer__link">All Products</a>
+        <a href="shop.html?cat=t-shirts" class="footer__link">T-Shirts</a>
+        <a href="shop.html?cat=hoodies" class="footer__link">Hoodies</a>
+        <a href="shop.html?cat=pants" class="footer__link">Pants</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Company</span>
+        <a href="about.html" class="footer__link">Our Story</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__heading">Help</span>
+        <a href="#" class="footer__link">Shipping & Returns</a>
+        <a href="#" class="footer__link">Size Guide</a>
+        <a href="#" class="footer__link">FAQs</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">© 2026 Loyal Clothing. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ═══ Cart Drawer ═══ -->
+  <div class="cart-overlay"></div>
+  <aside class="cart-drawer">
+    <div class="cart-drawer__header">
+      <span class="cart-drawer__title">Your Bag</span>
+      <button class="cart-drawer__close" aria-label="Close cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-drawer__items"></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__subtotal">
+        <span>Subtotal</span>
+        <span class="cart-drawer__subtotal-value">₹0</span>
+      </div>
+      <a href="#" class="btn btn--primary" style="width:100%">Checkout</a>
+      <span class="cart-drawer__note">Shipping calculated at checkout</span>
+    </div>
+  </aside>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Product-specific logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log("[Loyal Clothing] Loading Product Page...");
+      const params = new URLSearchParams(window.location.search);
+      let productId = parseInt(params.get('id'));
+      
+      // Fallback: if query parameter is missing or invalid, check localStorage
+      if (isNaN(productId)) {
+        productId = parseInt(localStorage.getItem('loyal_selected_product_id'));
+        console.log("[Loyal Clothing] Query param missing, loaded from localStorage ID:", productId);
+      } else {
+        console.log("[Loyal Clothing] Product ID from URL:", productId);
+      }
+      
+      // Secondary fallback: default to Heavyweight Hoodie (ID 2)
+      if (isNaN(productId)) {
+        productId = 2;
+        console.log("[Loyal Clothing] No ID found in URL or localStorage, defaulting to ID:", productId);
+      }
+
+      const product = typeof getProductById === 'function' ? getProductById(productId) : null;
+      console.log("[Loyal Clothing] Loaded Product Data:", product);
+      if (!product) {
+        console.warn("[Loyal Clothing] Product not found in database.");
+        return;
+      }
+
+      // Update Title
+      document.title = `${product.name} — Loyal Clothing`;
+
+      // Update Breadcrumbs
+      const breadcrumbCurrent = document.querySelector('.breadcrumb span:last-child');
+      if (breadcrumbCurrent) breadcrumbCurrent.textContent = product.name;
+
+      // Update Gallery Main Image
+      const mainImg = document.querySelector('.product-gallery__main img');
+      if (mainImg) {
+        mainImg.src = product.images[0];
+        mainImg.alt = product.name;
+      }
+
+      // Update Gallery Thumbnails
+      const thumbs = document.querySelectorAll('.product-gallery__thumb img');
+      thumbs.forEach((img, idx) => {
+        img.src = product.images[0];
+        img.alt = `${product.name} view ${idx + 1}`;
+      });
+
+      // Update Product Info details
+      const categoryLabel = document.querySelector('.product-info__label');
+      if (categoryLabel) {
+        categoryLabel.textContent = product.category;
+      }
+
+      const nameLabel = document.querySelector('.product-info__name');
+      if (nameLabel) nameLabel.textContent = product.name;
+
+      const priceLabel = document.querySelector('.product-info__price-row .price');
+      if (priceLabel) priceLabel.textContent = formatPrice(product.price);
+
+      const oldPriceLabel = document.querySelector('.product-info__price-row .product-card__price--old');
+      const saleBadge = document.querySelector('.product-info__price-row .badge--sale');
+      if (product.oldPrice) {
+        if (oldPriceLabel) {
+          oldPriceLabel.textContent = formatPrice(product.oldPrice);
+          oldPriceLabel.style.display = '';
+        }
+        if (saleBadge) saleBadge.style.display = '';
+      } else {
+        if (oldPriceLabel) oldPriceLabel.style.display = 'none';
+        if (saleBadge) saleBadge.style.display = 'none';
+      }
+
+      const descLabel = document.querySelector('.product-info__description');
+      if (descLabel) descLabel.textContent = product.description;
+
+      // Render Color Swatches
+      const colorContainer = document.querySelector('.color-swatches');
+      if (colorContainer) {
+        colorContainer.innerHTML = product.colors.map((color, idx) => `
+          <button class="color-swatch ${idx === 0 ? 'is-active' : ''}" style="background-color: ${color.hex};" aria-label="${color.name}" data-color="${color.name}"></button>
+        `).join('');
+      }
+
+      const selectedColorLabel = document.getElementById('selected-color');
+      if (selectedColorLabel && product.colors.length > 0) {
+        selectedColorLabel.textContent = product.colors[0].name;
+      }
+
+      // Render Size Selector
+      const sizeContainer = document.querySelector('.size-selector');
+      if (sizeContainer) {
+        sizeContainer.innerHTML = product.sizes.map((size, idx) => `
+          <button class="size-selector__option ${idx === 1 || (idx === 0 && product.sizes.length === 1) ? 'is-active' : ''}" data-size="${size}">${size}</button>
+        `).join('');
+      }
+
+      // Re-bind Selection Handlers
+      bindSelectors();
+
+      // Update Add to Cart Button Prices
+      const addBtn = document.getElementById('add-to-cart-btn');
+      if (addBtn) addBtn.textContent = `Add to Bag — ${formatPrice(product.price)}`;
+
+      // Update Accordions
+      const accordionContents = document.querySelectorAll('.product-accordion__content-inner');
+      if (accordionContents.length >= 3) {
+        accordionContents[0].textContent = product.fabric;
+        accordionContents[1].textContent = product.fit;
+        accordionContents[2].textContent = product.care;
+      }
+
+      // Update Mobile Sticky Bar
+      const mobileName = document.querySelector('.mobile-add-bar__name');
+      if (mobileName) mobileName.textContent = product.name;
+
+      const mobilePrice = document.querySelector('.mobile-add-bar__price');
+      if (mobilePrice) mobilePrice.textContent = formatPrice(product.price);
+
+      // Event Listeners for selectors
+      function bindSelectors() {
+        // Size option selection
+        document.querySelectorAll('.size-selector__option').forEach(option => {
+          option.addEventListener('click', () => {
+            document.querySelectorAll('.size-selector__option').forEach(o => o.classList.remove('is-active'));
+            option.classList.add('is-active');
+          });
+        });
+
+        // Color option selection
+        document.querySelectorAll('.color-swatch').forEach(swatch => {
+          swatch.addEventListener('click', () => {
+            document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('is-active'));
+            swatch.classList.add('is-active');
+            if (selectedColorLabel) selectedColorLabel.textContent = swatch.dataset.color;
+          });
+        });
+      }
+
+      function getSelectedSize() {
+        const active = document.querySelector('.size-selector__option.is-active');
+        return active ? active.dataset.size : (product.sizes[0] || 'M');
+      }
+
+      function getSelectedColor() {
+        const active = document.querySelector('.color-swatch.is-active');
+        return active ? active.dataset.color : (product.colors[0]?.name || 'Black');
+      }
+
+      function handleAddToCart() {
+        addToCart(product, getSelectedSize(), getSelectedColor());
+      }
+
+      if (addBtn) addBtn.addEventListener('click', handleAddToCart);
+      const mobileAddBtn = document.querySelector('.mobile-add-bar .btn');
+      if (mobileAddBtn) mobileAddBtn.addEventListener('click', handleAddToCart);
+    });
+  </script>
+</body>
+</html>
