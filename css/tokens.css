@@ -1,5 +1,5 @@
 /* ============================================================
-   LOYAL CLOTHING — Design Tokens
+   ZEXA CLOTHING — Design Tokens
    Single source of truth for the entire design system.
    ============================================================ */
 
@@ -20,9 +20,9 @@
   --font-display:  'Clash Display', 'Georgia', serif;
   --font-body:     'Inter', 'Segoe UI', sans-serif;
 
-  --fs-display:    clamp(48px, 8vw, 96px);
-  --fs-h1:         clamp(36px, 6vw, 72px);
-  --fs-h2:         clamp(28px, 4vw, 48px);
+  --fs-display:    clamp(36px, 10vw, 96px);
+  --fs-h1:         clamp(28px, 8vw, 72px);
+  --fs-h2:         clamp(24px, 4vw, 48px);
   --fs-h3:         20px;
   --fs-body:       16px;
   --fs-small:      14px;

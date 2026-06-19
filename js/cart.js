@@ -1,9 +1,9 @@
 /* ============================================================
-   LOYAL CLOTHING — Cart Module
+   ZEXA CLOTHING — Cart Module
    localStorage-backed cart with drawer UI interactions.
    ============================================================ */
 
-const CART_KEY = 'loyal_cart';
+const CART_KEY = 'zexa_cart';
 
 /**
  * Get cart from localStorage

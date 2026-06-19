@@ -1,5 +1,5 @@
 /* ============================================================
-   LOYAL CLOTHING — Header Component
+   ZEXA CLOTHING — Header Component
    Mobile menu toggle, scroll-hide nav, active link detection.
    ============================================================ */
 

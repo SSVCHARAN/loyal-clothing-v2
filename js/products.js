@@ -1,5 +1,5 @@
 /* ============================================================
-   LOYAL CLOTHING — Product Data
+   ZEXA CLOTHING — Product Data
    All product information as a structured JS array.
    ============================================================ */
 
@@ -35,7 +35,7 @@ const PRODUCTS = [
       { name: "Cream", hex: "#F5F0E8" }
     ],
     sizes: ["S", "M", "L", "XL"],
-    description: "Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Loyal branding at the chest.",
+    description: "Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Zexa branding at the chest.",
     fabric: "100% French Terry Cotton — 400 GSM",
     fit: "Regular — Model is 5'11\" wearing size L",
     care: "Machine wash cold inside out. Hang dry recommended.",
@@ -71,7 +71,7 @@ const PRODUCTS = [
       { name: "Black", hex: "#1A1A1A" }
     ],
     sizes: ["S", "M", "L", "XL", "XXL"],
-    description: "Clean, minimal tee with a subtle embroidered Loyal logo at the left chest. Made from soft ringspun cotton for everyday comfort.",
+    description: "Clean, minimal tee with a subtle embroidered Zexa logo at the left chest. Made from soft ringspun cotton for everyday comfort.",
     fabric: "100% Ringspun Cotton — 180 GSM",
     fit: "Regular — Model is 5'10\" wearing size M",
     care: "Machine wash cold. Tumble dry low.",

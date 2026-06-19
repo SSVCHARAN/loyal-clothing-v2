@@ -1,10 +1,21 @@
 /* ============================================================
-   LOYAL CLOTHING — Global Styles
+   ZEXA CLOTHING — Global Styles
    Base typography, layout containers, utility classes.
    ============================================================ */
 
+/* ── HTML ────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 /* ── Body ────────────────────────────────────────────────── */
 body {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
   font-family: var(--font-body);
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
@@ -91,6 +102,12 @@ h3, .h3 {
 
 .section--lg {
   padding-block: var(--space-5xl);
+}
+
+@media (max-width: 768px) {
+  .section, .section--sm, .section--lg {
+    padding-block: var(--space-2xl);
+  }
 }
 
 /* ── Flex & Grid Utilities ───────────────────────────────── */

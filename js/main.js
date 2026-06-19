@@ -1,5 +1,5 @@
 /* ============================================================
-   LOYAL CLOTHING — Main JS
+   ZEXA CLOTHING — Main JS
    Scroll reveal animations, page load stagger, smooth scroll.
    ============================================================ */
 
@@ -217,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     parallaxBgs.forEach(bg => parallaxObserver.observe(bg));
 
     window.addEventListener('scroll', () => {
+      if (window.innerWidth <= 768) return;
       const visibleSections = document.querySelectorAll('.is-visible-scroll');
       visibleSections.forEach(section => {
         const rect = section.getBoundingClientRect();
@@ -236,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (card && !e.target.closest('.product-card__quick-add')) {
       const id = card.dataset.productId;
       if (id) {
-        localStorage.setItem('loyal_selected_product_id', id);
+        localStorage.setItem('zexa_selected_product_id', id);
       }
     }
   });

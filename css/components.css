@@ -1,5 +1,5 @@
 /* ============================================================
-   LOYAL CLOTHING — Component Styles
+   ZEXA CLOTHING — Component Styles
    Buttons, product cards, badges, inputs, cart drawer.
    ============================================================ */
 
@@ -37,11 +37,11 @@
 .btn--primary:hover {
   background-color: var(--color-accent-hover);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
 }
 
 .btn--primary:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.98);
 }
 
 .btn--secondary {
@@ -54,10 +54,11 @@
   background-color: var(--color-accent);
   color: var(--color-bg);
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
 }
 
 .btn--secondary:active {
-  transform: translateY(0);
+  transform: translateY(0) scale(0.98);
 }
 
 .btn--small {
@@ -70,13 +71,7 @@
   border-radius: 50%;
 }
 
-/* Full-width on mobile */
-@media (max-width: 768px) {
-  .btn--primary,
-  .btn--secondary {
-    width: 100%;
-  }
-}
+/* Full-width on mobile (removed to fix alignment issues) */
 
 /* ── Product Cards ───────────────────────────────────────── */
 .product-card {
@@ -97,7 +92,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 400ms ease-out;
+  transition: transform 800ms cubic-bezier(0.1, 0.8, 0.2, 1);
 }
 
 .product-card__image--hover {

@@ -1,5 +1,5 @@
 /* ============================================================
-   LOYAL CLOTHING — Home Page Styles
+   ZEXA CLOTHING — Home Page Styles
    ============================================================ */
 
 /* ── Hero Section ────────────────────────────────────────── */
@@ -39,8 +39,8 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(26, 26, 26, 0.15) 0%,
-    rgba(26, 26, 26, 0.55) 100%
+    rgba(26, 26, 26, 0.3) 0%,
+    rgba(26, 26, 26, 0.75) 100%
   );
   z-index: 1;
 }
@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
   padding-inline: var(--gutter);
 }
 
@@ -62,7 +62,8 @@
   font-weight: var(--fw-medium);
   letter-spacing: var(--ls-wider);
   text-transform: uppercase;
-  opacity: 0.8;
+  opacity: 0.9;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero__title {
@@ -72,13 +73,15 @@
   line-height: var(--lh-tight);
   letter-spacing: var(--ls-tight);
   max-width: 800px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .hero__subtitle {
   font-size: var(--fs-body);
-  opacity: 0.75;
+  opacity: 0.9;
   max-width: 500px;
   line-height: var(--lh-normal);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .hero__cta {
@@ -164,7 +167,16 @@
   height: 100%;
 }
 
+/* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 768px) {
+  .featured__header,
+  .arrivals__header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-sm);
+  }
+
   .featured__grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -241,17 +253,27 @@
 }
 
 @media (max-width: 768px) {
+  .story-strip {
+    padding-block: var(--space-2xl);
+  }
+
   .story-strip__inner {
     grid-template-columns: 1fr;
     min-height: auto;
   }
 
   .story-strip__image {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 5;
   }
 
   .story-strip__content {
     padding: var(--space-2xl) var(--gutter);
+  }
+
+  .hero__bg img,
+  .story-strip__image img {
+    height: 100%;
+    transform: none !important;
   }
 }
 
@@ -272,6 +294,8 @@
 
 .arrivals__scroll-wrapper {
   overflow-x: auto;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   padding-inline: var(--gutter);

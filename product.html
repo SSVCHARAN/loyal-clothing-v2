@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heavyweight Hoodie — Loyal Clothing</title>
-  <meta name="description" content="Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Loyal branding.">
+  <title>Heavyweight Hoodie — Zexa Clothing</title>
+  <meta name="description" content="Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Zexa branding.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,18 +23,18 @@
 
   <!-- ═══ Announcement Bar ═══ -->
   <div class="announcement-bar">
-    Free shipping on orders above ₹2,000 — Use code LOYAL10 for 10% off
+    Free shipping on orders above ₹2,000 — Use code ZEXA10 for 10% off
   </div>
 
   <!-- ═══ Header ═══ -->
   <header class="site-header">
     <div class="header__inner">
-      <div class="header__logo"><a href="index.html">Loyal Clothing</a></div>
+      <div class="header__logo"><a href="index.html">Zexa Clothing</a></div>
       <nav class="header__nav">
-        <a href="index.html" class="header__nav-link">Home</a>
-        <a href="shop.html" class="header__nav-link">Shop</a>
-        <a href="about.html" class="header__nav-link">Our Story</a>
-        <a href="contact.html" class="header__nav-link">Contact</a>
+        <a href="index.html#hero" class="header__nav-link">Home</a>
+        <a href="index.html#shop" class="header__nav-link">Shop</a>
+        <a href="index.html#story" class="header__nav-link">Our Story</a>
+        <a href="index.html#contact" class="header__nav-link">Contact</a>
       </nav>
       <div class="header__actions">
         <button class="header__action-btn" aria-label="Search" id="search-toggle">
@@ -51,10 +51,10 @@
 
   <!-- ═══ Mobile Menu ═══ -->
   <div class="mobile-menu">
-    <a href="index.html" class="mobile-menu__link">Home</a>
-    <a href="shop.html" class="mobile-menu__link">Shop</a>
-    <a href="about.html" class="mobile-menu__link">Our Story</a>
-    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="index.html#hero" class="mobile-menu__link">Home</a>
+    <a href="index.html#shop" class="mobile-menu__link">Shop</a>
+    <a href="index.html#story" class="mobile-menu__link">Our Story</a>
+    <a href="index.html#contact" class="mobile-menu__link">Contact</a>
   </div>
 
   <!-- ═══ Product Detail ═══ -->
@@ -105,7 +105,7 @@
         </div>
 
         <p class="product-info__description">
-          Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Loyal branding at the chest.
+          Premium heavyweight hoodie built for all seasons. Double-layered hood, kangaroo pocket, and embroidered Zexa branding at the chest.
         </p>
 
         <hr class="divider">
@@ -257,7 +257,7 @@
   <footer class="site-footer">
     <div class="footer__grid">
       <div class="footer__brand">
-        <span class="footer__logo">Loyal Clothing</span>
+        <span class="footer__logo">Zexa Clothing</span>
         <p class="footer__tagline">Premium streetwear essentials crafted for those who stay true.</p>
         <div class="footer__socials">
           <a href="#" class="footer__social-link" aria-label="Instagram">
@@ -270,15 +270,15 @@
       </div>
       <div class="footer__column">
         <span class="footer__heading">Shop</span>
-        <a href="shop.html" class="footer__link">All Products</a>
-        <a href="shop.html?cat=t-shirts" class="footer__link">T-Shirts</a>
-        <a href="shop.html?cat=hoodies" class="footer__link">Hoodies</a>
-        <a href="shop.html?cat=pants" class="footer__link">Pants</a>
+        <a href="index.html#shop" class="footer__link">All Products</a>
+        <a href="index.html#shop?cat=t-shirts" class="footer__link">T-Shirts</a>
+        <a href="index.html#shop?cat=hoodies" class="footer__link">Hoodies</a>
+        <a href="index.html#shop?cat=pants" class="footer__link">Pants</a>
       </div>
       <div class="footer__column">
         <span class="footer__heading">Company</span>
-        <a href="about.html" class="footer__link">Our Story</a>
-        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="index.html#story" class="footer__link">Our Story</a>
+        <a href="index.html#contact" class="footer__link">Contact</a>
       </div>
       <div class="footer__column">
         <span class="footer__heading">Help</span>
@@ -288,7 +288,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span class="footer__copyright">© 2026 Loyal Clothing. All rights reserved.</span>
+      <span class="footer__copyright">© 2026 Zexa Clothing. All rights reserved.</span>
     </div>
   </footer>
 
@@ -320,33 +320,33 @@
   <!-- Product-specific logic -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      console.log("[Loyal Clothing] Loading Product Page...");
+      console.log("[Zexa Clothing] Loading Product Page...");
       const params = new URLSearchParams(window.location.search);
       let productId = parseInt(params.get('id'));
       
       // Fallback: if query parameter is missing or invalid, check localStorage
       if (isNaN(productId)) {
-        productId = parseInt(localStorage.getItem('loyal_selected_product_id'));
-        console.log("[Loyal Clothing] Query param missing, loaded from localStorage ID:", productId);
+        productId = parseInt(localStorage.getItem('zexa_selected_product_id'));
+        console.log("[Zexa Clothing] Query param missing, loaded from localStorage ID:", productId);
       } else {
-        console.log("[Loyal Clothing] Product ID from URL:", productId);
+        console.log("[Zexa Clothing] Product ID from URL:", productId);
       }
       
       // Secondary fallback: default to Heavyweight Hoodie (ID 2)
       if (isNaN(productId)) {
         productId = 2;
-        console.log("[Loyal Clothing] No ID found in URL or localStorage, defaulting to ID:", productId);
+        console.log("[Zexa Clothing] No ID found in URL or localStorage, defaulting to ID:", productId);
       }
 
       const product = typeof getProductById === 'function' ? getProductById(productId) : null;
-      console.log("[Loyal Clothing] Loaded Product Data:", product);
+      console.log("[Zexa Clothing] Loaded Product Data:", product);
       if (!product) {
-        console.warn("[Loyal Clothing] Product not found in database.");
+        console.warn("[Zexa Clothing] Product not found in database.");
         return;
       }
 
       // Update Title
-      document.title = `${product.name} — Loyal Clothing`;
+      document.title = `${product.name} — Zexa Clothing`;
 
       // Update Breadcrumbs
       const breadcrumbCurrent = document.querySelector('.breadcrumb span:last-child');

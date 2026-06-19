@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loyal Clothing — Wear Your Identity</title>
-  <meta name="description" content="Loyal Clothing — Premium streetwear essentials crafted for those who stay true. Shop oversized tees, heavyweight hoodies, and cargo pants.">
+  <title>Zexa Clothing — Wear Your Identity</title>
+  <meta name="description" content="Zexa Clothing — Premium streetwear essentials crafted for those who stay true. Shop oversized tees, heavyweight hoodies, and cargo pants.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,26 +20,30 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/pages/home.css">
+
+  <link rel="stylesheet" href="css/pages/shop.css">
+  <link rel="stylesheet" href="css/pages/about.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
 </head>
 <body>
 
   <!-- ═══ Announcement Bar ═══ -->
   <div class="announcement-bar">
-    Free shipping on orders above ₹2,000 — Use code LOYAL10 for 10% off
+    Free shipping on orders above ₹2,000 — Use code ZEXA10 for 10% off
   </div>
 
   <!-- ═══ Header ═══ -->
   <header class="site-header">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="index.html">Loyal Clothing</a>
+        <a href="#">Zexa Clothing</a>
       </div>
 
       <nav class="header__nav">
-        <a href="index.html" class="header__nav-link is-active">Home</a>
-        <a href="shop.html" class="header__nav-link">Shop</a>
-        <a href="about.html" class="header__nav-link">Our Story</a>
-        <a href="contact.html" class="header__nav-link">Contact</a>
+        <a href="#hero" class="header__nav-link is-active">Home</a>
+        <a href="#shop" class="header__nav-link">Shop</a>
+        <a href="#story" class="header__nav-link">Our Story</a>
+        <a href="#contact" class="header__nav-link">Contact</a>
       </nav>
 
       <div class="header__actions">
@@ -73,25 +77,25 @@
 
   <!-- ═══ Mobile Menu ═══ -->
   <div class="mobile-menu">
-    <a href="index.html" class="mobile-menu__link">Home</a>
-    <a href="shop.html" class="mobile-menu__link">Shop</a>
-    <a href="about.html" class="mobile-menu__link">Our Story</a>
-    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="#hero" class="mobile-menu__link">Home</a>
+    <a href="#shop" class="mobile-menu__link">Shop</a>
+    <a href="#story" class="mobile-menu__link">Our Story</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
   </div>
 
   <!-- ═══ Hero Section ═══ -->
   <section class="hero" id="hero">
     <div class="hero__bg parallax-bg">
-      <img src="assets/images/hero-bg.png" alt="Loyal Clothing — Premium Streetwear" class="img-cover">
+      <img src="assets/images/hero-bg.png" alt="Zexa Clothing — Premium Streetwear" class="img-cover">
     </div>
     <div class="hero__overlay"></div>
 
-    <div class="hero__content">
+    <div class="hero__content stagger">
       <span class="hero__tagline reveal">New Collection 2026</span>
       <h1 class="hero__title reveal">Wear Your<br>Identity</h1>
       <p class="hero__subtitle reveal">Premium streetwear essentials crafted for those who stay true. Quality fabrics, bold silhouettes, everyday confidence.</p>
       <div class="hero__cta reveal">
-        <a href="shop.html" class="btn btn--primary">Shop Now</a>
+        <a href="#shop" class="btn btn--primary">Shop Now</a>
       </div>
     </div>
 
@@ -110,7 +114,7 @@
         <span class="featured__label reveal">Curated for you</span>
         <h2 class="reveal">Featured Picks</h2>
       </div>
-      <a href="shop.html" class="btn btn--secondary btn--small reveal">View All</a>
+      <a href="#shop" class="btn btn--secondary btn--small reveal">View All</a>
     </div>
 
     <div class="featured__grid stagger">
@@ -167,14 +171,14 @@
   <section class="story-strip" id="story-strip">
     <div class="story-strip__inner">
       <div class="story-strip__image reveal-left parallax-bg">
-        <img src="assets/images/hero-bg.png" alt="Behind the scenes at Loyal Clothing" class="img-cover" style="min-height:500px;">
+        <img src="assets/images/lifestyle-city.png" alt="Behind the scenes at Zexa Clothing" class="img-cover">
       </div>
       <div class="story-strip__content reveal-right">
         <span class="story-strip__label">Our Story</span>
         <h2>Built on Loyalty,<br>Worn with Pride</h2>
         <p class="story-strip__text">We started with a simple belief: clothing should mean something. Every piece we make is designed to last, crafted locally with premium fabrics, and built for people who value substance over hype.</p>
         <div>
-          <a href="about.html" class="btn btn--secondary">Our Story</a>
+          
         </div>
       </div>
     </div>
@@ -187,7 +191,7 @@
         <span class="featured__label reveal">Just Dropped</span>
         <h2 class="reveal">New Arrivals</h2>
       </div>
-      <a href="shop.html" class="btn btn--secondary btn--small reveal">Shop All</a>
+      <a href="#shop" class="btn btn--secondary btn--small reveal" style="padding-inline: 12px;">Shop All <span style="font-family: monospace; margin-left: 4px; font-weight: bold;">></span></a>
     </div>
 
     <div class="arrivals__scroll-wrapper">
@@ -255,11 +259,377 @@
     </div>
   </section>
 
+  
+  <section id="shop" class="section" style="padding-top: 0;">
+
+  <section class="shop-header">
+    <div class="container">
+      <span class="caption reveal">Explore the collection</span>
+      <h1 class="shop-header__title reveal">All Products</h1>
+    </div>
+  </section>
+
+  <!-- ═══ Filter Bar ═══ -->
+  <div class="filter-bar stagger">
+    <button class="filter-pill is-active reveal" data-category="all">All</button>
+    <button class="filter-pill reveal" data-category="t-shirts">T-Shirts</button>
+    <button class="filter-pill reveal" data-category="hoodies">Hoodies</button>
+    <button class="filter-pill reveal" data-category="pants">Pants</button>
+  </div>
+
+  <!-- ═══ Results Count ═══ -->
+  <div class="results-count reveal">
+    Showing <span>8</span> products
+  </div>
+
+  <!-- ═══ Product Grid ═══ -->
+  <div class="products-grid stagger">
+
+    <!-- Product 1 -->
+    <a href="product.html?id=1" class="product-card reveal" data-product-id="1" data-category="t-shirts">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-tee.png" alt="Essential Oversized Tee" class="img-cover product-card__image">
+        <span class="product-card__badge badge badge--new">New</span>
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Essential Oversized Tee</span>
+        <span class="product-card__price">₹1,499</span>
+      </div>
+    </a>
+
+    <!-- Product 2 -->
+    <a href="product.html?id=2" class="product-card reveal" data-product-id="2" data-category="hoodies">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-hoodie.png" alt="Heavyweight Hoodie" class="img-cover product-card__image">
+        <span class="product-card__badge badge badge--sale">Sale</span>
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Heavyweight Hoodie</span>
+        <div>
+          <span class="product-card__price">₹2,999</span>
+          <span class="product-card__price product-card__price--old">₹3,499</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Product 3 -->
+    <a href="product.html?id=3" class="product-card reveal" data-product-id="3" data-category="pants">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-cargo.png" alt="Relaxed Cargo Pants" class="img-cover product-card__image">
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Relaxed Cargo Pants</span>
+        <span class="product-card__price">₹2,499</span>
+      </div>
+    </a>
+
+    <!-- Product 4 -->
+    <a href="product.html?id=4" class="product-card reveal" data-product-id="4" data-category="t-shirts">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-logo-tee.png" alt="Minimal Logo Tee" class="img-cover product-card__image">
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Minimal Logo Tee</span>
+        <span class="product-card__price">₹1,299</span>
+      </div>
+    </a>
+
+    <!-- ═══ Editorial Break ═══ -->
+    <div class="editorial-break reveal">
+      <img src="assets/images/lifestyle-skate.png" alt="Zexa Clothing Lifestyle" class="img-cover">
+      <div class="editorial-break__overlay">
+        <span class="editorial-break__text">Crafted to Last.<br>Designed to Stand Out.</span>
+      </div>
+    </div>
+
+    <!-- Product 5 -->
+    <a href="product.html?id=5" class="product-card reveal" data-product-id="5" data-category="pants">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-joggers.png" alt="Streetwear Joggers" class="img-cover product-card__image">
+        <span class="product-card__badge badge badge--new">New</span>
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Streetwear Joggers</span>
+        <span class="product-card__price">₹2,199</span>
+      </div>
+    </a>
+
+    <!-- Product 6 -->
+    <a href="product.html?id=6" class="product-card reveal" data-product-id="6" data-category="hoodies">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-vintage-hoodie.png" alt="Washed Vintage Hoodie" class="img-cover product-card__image">
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Washed Vintage Hoodie</span>
+        <span class="product-card__price">₹3,299</span>
+      </div>
+    </a>
+
+    <!-- Product 7 -->
+    <a href="product.html?id=7" class="product-card reveal" data-product-id="7" data-category="t-shirts">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-polo.png" alt="Drop Shoulder Polo" class="img-cover product-card__image">
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Drop Shoulder Polo</span>
+        <span class="product-card__price">₹1,799</span>
+      </div>
+    </a>
+
+    <!-- Product 8 -->
+    <a href="product.html?id=8" class="product-card reveal" data-product-id="8" data-category="pants">
+      <div class="product-card__image-wrapper">
+        <img src="assets/images/product-trousers.png" alt="Wide Leg Trousers" class="img-cover product-card__image">
+        <span class="product-card__badge badge badge--sale">Sale</span>
+        <div class="product-card__quick-add">
+          <button class="btn btn--primary btn--small" style="width:100%">Quick Add</button>
+        </div>
+      </div>
+      <div class="product-card__info">
+        <span class="product-card__name">Wide Leg Trousers</span>
+        <div>
+          <span class="product-card__price">₹2,699</span>
+          <span class="product-card__price product-card__price--old">₹2,999</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  
+</section>
+  <div id="story">
+
+  <section class="story-section">
+
+    <!-- Block 1: Origin -->
+    <div class="story-block">
+      <div class="story-block__image reveal-left">
+        <img src="assets/images/lifestyle-city.png" alt="Zexa Clothing craftsmanship" class="img-cover">
+      </div>
+      <div class="story-block__content reveal-right">
+        <span class="story-block__label">The Beginning</span>
+        <h2>Born from Loyalty</h2>
+        <p class="story-block__text">
+          Zexa Clothing started with a simple idea: create clothes that actually mean something. No fast fashion, no disposable trends — just well-made pieces that become part of your identity. We launched from a small studio with nothing but a vision and a handful of heavyweight cotton rolls.
+        </p>
+        <p class="story-block__text">
+          Every piece we design is a reflection of loyalty — to quality, to community, and to the people who wear us.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 2: Craftsmanship (reversed) -->
+    <div class="story-block story-block--reverse">
+      <div class="story-block__image reveal-right">
+        <img src="assets/images/lifestyle-skate.png" alt="Zexa Clothing quality materials" class="img-cover">
+      </div>
+      <div class="story-block__content reveal-left">
+        <span class="story-block__label">The Craft</span>
+        <h2>Made to Last</h2>
+        <p class="story-block__text">
+          We obsess over fabric weight, stitch count, and garment construction. Every hoodie uses 400 GSM French Terry cotton. Every tee starts at 240 GSM. We work with local manufacturers who share our standards — because cutting corners on quality means cutting corners on trust.
+        </p>
+        <p class="story-block__text">
+          The result? Clothes that feel substantial the moment you pick them up, and only get better with every wash.
+        </p>
+      </div>
+    </div>
+
+    <!-- Block 3: Community -->
+    <div class="story-block">
+      <div class="story-block__image reveal-left">
+        <img src="assets/images/hero-bg.png" alt="Zexa Clothing community" class="img-cover">
+      </div>
+      <div class="story-block__content reveal-right">
+        <span class="story-block__label">The People</span>
+        <h2>Built by Community</h2>
+        <p class="story-block__text">
+          Zexa isn't just a brand — it's a community of people who value substance over hype. From the photographers who shoot our lookbooks to the friends who wear-test every prototype, our community shapes everything we do.
+        </p>
+        <p class="story-block__text">
+          When you wear Zexa, you're not just wearing clothes. You're wearing a shared belief that style should be authentic, intentional, and built to last.
+        </p>
+        <div>
+          <a href="#shop" class="btn btn--primary">Explore the Collection</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══ Values Grid ═══ -->
+  <section class="values">
+    <div class="values__header">
+      <span class="caption reveal">What we stand for</span>
+      <h2 class="reveal">Our Values</h2>
+    </div>
+
+    <div class="values__grid stagger">
+      <div class="value-card reveal">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="value-card__title">Quality First</h3>
+        <p class="value-card__text">Every piece is made with premium fabrics and meticulous construction. We never compromise on materials.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3 class="value-card__title">Locally Made</h3>
+        <p class="value-card__text">We work with local manufacturers and artisans. Every purchase supports the community that built us.</p>
+      </div>
+
+      <div class="value-card reveal">
+        <div class="value-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+            <path d="M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <h3 class="value-card__title">Community Driven</h3>
+        <p class="value-card__text">Our community shapes our designs. We listen, adapt, and build together — because loyalty goes both ways.</p>
+      </div>
+    </div>
+  </section>
+
+  
+</div>
+  <div id="contact">
+
+  <section class="contact">
+    <div class="contact__header">
+      <span class="caption reveal">Get in touch</span>
+      <h1 class="reveal">Let's Talk</h1>
+      <p class="contact__subtitle reveal">Questions, collaborations, or just want to say hello? We'd love to hear from you.</p>
+    </div>
+
+    <div class="contact__layout">
+
+      <!-- ── Form ──────────────────────────────────────────── -->
+      <form class="contact-form reveal-left" id="contact-form">
+        <div class="contact-form__row">
+          <div class="input-group">
+            <label for="contact-first-name">First Name</label>
+            <input type="text" id="contact-first-name" class="input" placeholder="John" required>
+          </div>
+          <div class="input-group">
+            <label for="contact-last-name">Last Name</label>
+            <input type="text" id="contact-last-name" class="input" placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" class="input" placeholder="john@example.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" class="input" placeholder="What's this about?">
+        </div>
+
+        <div class="input-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" class="input" placeholder="Tell us more..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+
+      <!-- ── Info ──────────────────────────────────────────── -->
+      <div class="contact-info reveal-right">
+        <div class="contact-info__block">
+          <span class="contact-info__label">Email</span>
+          <span class="contact-info__value">
+            <a href="mailto:zexabuilds@gmail.com">zexabuilds@gmail.com</a>
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Phone</span>
+          <span class="contact-info__value" style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="tel:+919666637481">+91 96666 37481</a>
+            <a href="tel:+917337036740">+91 73370 36740</a>
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Location</span>
+          <span class="contact-info__value">
+            Zexa Clothing HQ<br>
+            Mumbai, Maharashtra<br>
+            India
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Business Hours</span>
+          <span class="contact-info__value">
+            Mon – Fri: 10:00 AM – 7:00 PM<br>
+            Sat: 11:00 AM – 5:00 PM<br>
+            Sun: Closed
+          </span>
+        </div>
+
+        <div class="contact-info__block">
+          <span class="contact-info__label">Follow Us</span>
+          <div class="contact-info__socials">
+            <a href="#" class="contact-info__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="contact-info__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="contact-info__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+</div>
+
   <!-- ═══ Newsletter ═══ -->
+
   <section class="newsletter section" id="newsletter">
     <div class="newsletter__inner">
       <span class="caption reveal">Stay in the loop</span>
-      <h2 class="reveal">Join the Loyal Club</h2>
+      <h2 class="reveal">Join the Zexa Club</h2>
       <p class="newsletter__text reveal">Get early access to new drops, exclusive discounts, and behind-the-scenes content. No spam, just loyalty.</p>
       <form class="newsletter-form reveal" id="newsletter-form">
         <input type="email" class="input" placeholder="Enter your email" required aria-label="Email address">
@@ -272,7 +642,7 @@
   <footer class="site-footer">
     <div class="footer__grid">
       <div class="footer__brand">
-        <span class="footer__logo">Loyal Clothing</span>
+        <span class="footer__logo">Zexa Clothing</span>
         <p class="footer__tagline">Premium streetwear essentials crafted for those who stay true. Quality over quantity, always.</p>
         <div class="footer__socials">
           <a href="#" class="footer__social-link" aria-label="Instagram">
@@ -297,7 +667,7 @@
 
       <div class="footer__column">
         <span class="footer__heading">Shop</span>
-        <a href="shop.html" class="footer__link">All Products</a>
+        <a href="#shop" class="footer__link">All Products</a>
         <a href="shop.html?cat=t-shirts" class="footer__link">T-Shirts</a>
         <a href="shop.html?cat=hoodies" class="footer__link">Hoodies</a>
         <a href="shop.html?cat=pants" class="footer__link">Pants</a>
@@ -305,8 +675,8 @@
 
       <div class="footer__column">
         <span class="footer__heading">Company</span>
-        <a href="about.html" class="footer__link">Our Story</a>
-        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="#story" class="footer__link">Our Story</a>
+        <a href="#contact" class="footer__link">Contact</a>
         <a href="#" class="footer__link">Careers</a>
         <a href="#" class="footer__link">Blog</a>
       </div>
@@ -321,7 +691,7 @@
     </div>
 
     <div class="footer__bottom">
-      <span class="footer__copyright">© 2026 Loyal Clothing. All rights reserved.</span>
+      <span class="footer__copyright">© 2026 Zexa Clothing. All rights reserved. Built by Zexa Designs.</span>
     </div>
   </footer>
 
